@@ -1,0 +1,6 @@
+:root{
+    business-title-font: "Baskervville SC", serif;
+}
+h1{
+    font-family: var(business-title-font);
+}
