@@ -1,6 +1,73 @@
 :root{
     business-title-font: "Baskervville SC", serif;
+    default-font:"Poppins", serif;
 }
-h1{
+body{
+    font-family: var(default-font);
+}
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.4)), url('../images/irish-mist.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    padding: 260px 0;
+    text-align: center;
+}
+
+header h1{
     font-family: var(business-title-font);
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    margin: 30px 0;
+    
+}
+header h2{
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    margin: 0;
+}
+header h3{
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 0;
+}
+header a{
+    background-color:#fff;
+    border-radius: 4px;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    margin-top: 32px;
+    padding: 16px 32px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 150ms ease-in-out;
+}
+@media(max-width:900px){
+    header{
+        padding: 60px 0;
+    }
+    header h1{
+        font-size: 48px;
+    }
+    header h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    header h3{
+        font-size: 16px;
+        
+    }
+   
 }
