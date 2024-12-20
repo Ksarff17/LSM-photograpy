@@ -4,8 +4,18 @@
 }
 body{
     font-family: var(default-font);
+    background-color: #000;
 }
 .container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+   
+}
+section{
     max-width: 1400px;
     margin: 0 auto;
 }
@@ -15,7 +25,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
-    padding: 260px 0;
+    padding: 200px 0;
     text-align: center;
 }
 
@@ -53,6 +63,41 @@ header a{
     text-decoration: none;
     text-transform: uppercase;
     transition: all 150ms ease-in-out;
+}
+
+footer{
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/irish-forest.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:#fff;
+    padding: 100px 50px;
+}
+footer h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+footer ul{
+    padding: 0;
+}
+footer li{
+    letter-spacing: 1.5px;
+    list-style: none;
+    line-height: 1.5;
+    font-size: 20px;
+    opacity: .8;
+}
+footer a {
+    background-color: #04410c;
+    border-radius: 50%;
+    color:#fff;
+    font-size: 20px;
+    opacity: .8;
+    padding: 10px 12px;  
+}
+footer a:hover{
+    opacity:1;
 }
 @media(max-width:900px){
     header{
