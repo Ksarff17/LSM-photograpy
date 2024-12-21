@@ -98,8 +98,7 @@ main p{
     opacity: .7;
 }
 .img-responsive{
-    max-width: 100%;
-    display: block;
+    aspect-ratio: 1/1;
 }
 .about-photo{
     display: block;
@@ -125,13 +124,20 @@ section.secondary{
     margin-top: 20px;
 }
 .grid-3-col div img{
-    max-width: 100%;
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
 .card{
     background-color:#f8f8f8;
-    margin: 30px 0;
+    margin: 30px 0 0;
+}
+.card-header.grid{
+    grid-gap:0;
+}
+.embed{
+    width:100%;
+    aspect-ratio: 1/1;
 }
 .card-body{
     padding: 30px;
@@ -216,11 +222,14 @@ footer a:hover{
     section{
     padding: 20px;
     }
-
-
-    
     .grid{
         grid-template-columns: 1fr;
+    }
+    .img-responsive{
+        display: none !important;
+    }
+    .embed{
+        aspect-ratio: 16/9;
     }
    
 }
