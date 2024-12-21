@@ -12,9 +12,25 @@ body{
 }
 .grid{
     display:grid;
-    grid-template-columns: 1fr 1fr;  
+      
 }
-
+.grid-2-col{
+    grid-template-columns: 1fr 1fr;
+}
+.grid-3-col{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+.grid-3-col div img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.img-responsive{
+    aspect-ratio: 1/1;
+}
 
 header{
     background-image:linear-gradient(rgba(26,19,24,0.4), rgba(26,19,24,0.4)), url('../images/irish-mist.jpg');
@@ -97,9 +113,7 @@ main p{
     line-height: 1.5;
     opacity: .7;
 }
-.img-responsive{
-    aspect-ratio: 1/1;
-}
+
 .about-photo{
     display: block;
     margin: 0 auto;
@@ -117,20 +131,10 @@ section.secondary{
     text-align: center;
     font-size: 24px;
 }
-.grid-3-col{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
-    margin-top: 20px;
-}
-.grid-3-col div img{
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-}
+
 .card{
     background-color:#f8f8f8;
-    margin: 30px 0 0;
+    margin: 30px 0 ;
 }
 .card-header.grid{
     grid-gap:0;
@@ -183,7 +187,7 @@ footer li{
     font-size: 20px;
     opacity: .8;
 }
-footer a {
+footer.contact {
     background-color: #04410c;
     border-radius: 50%;
     color:#fff;
@@ -193,6 +197,18 @@ footer a {
 }
 footer a:hover{
     opacity:1;
+}
+footer p{
+    text-align: center;
+    opacity: .8;
+}
+.coder-links{
+    text-decoration: none;
+    background-color: none;
+    color:#fff;
+}
+.coder-links:hover{
+    color: rgb(138, 40, 125)
 }
 @media(max-width:1200px){
    .grid-3-col{
