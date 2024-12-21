@@ -60,7 +60,6 @@ main{
     color: var(--primary-color);
 }
 main h2{
-    
     font-weight: 700;
     font-size: 16px;
     line-height: 1.5;
@@ -77,13 +76,30 @@ main h3{
     letter-spacing: 3px;
     margin: 0px;
 }
+main h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: var(--primary-color);
+    margin: 0;
+}
+main h5{
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    color: var(--primary-color)
+}
+
 main p{
-    
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
     opacity: .7;
+}
+.img-responsive{
+    max-width: 100%;
+    display: block;
 }
 .about-photo{
     display: block;
@@ -106,7 +122,6 @@ section.secondary{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 10px;
-    text-align: center;
     margin-top: 20px;
 }
 .grid-3-col div img{
@@ -114,6 +129,29 @@ section.secondary{
     display: block;
     margin: 0 auto;
 }
+.card{
+    background-color:#f8f8f8;
+    margin: 30px 0;
+}
+.card-body{
+    padding: 30px;
+}
+.card-footer{
+    padding: 30px;
+}
+.btn{
+    display: block;
+    color:#fff;
+    background-color: var(--primary-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    padding: 16px;
+}
+.btn:hover{
+    background-color: rgb(58, 34, 55);
+}
+
 
 footer{
     background-image:linear-gradient(rgba(26,19,24,0.7), rgba(26,19,24,0.7)), url('../images/irish-forest.jpg');
