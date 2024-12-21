@@ -109,9 +109,10 @@ section.secondary{
     text-align: center;
     margin-top: 20px;
 }
-.grid-3-col div{
+.grid-3-col div img{
     max-width: 100%;
     display: block;
+    margin: 0 auto;
 }
 
 footer{
